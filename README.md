@@ -17,12 +17,14 @@
   # e.g.
   # python data_download.py --data_dir ../dataset --history_length 10 --seed 67
 ```
- --data_dir (default: "./dataset")
+--data_dir (default: "./dataset")
 * signal_data 디렉토리와 clinical_data.csv가 위치해있는 상위 dataset 디렉토리
- --history_length (default: 30)
+
+--history_length (default: 30)
 * 각 subject의 time step의 길이에 관여하는 요소
 * 결과 data 길이 = history_length + 1
- --seed (default: 67) int
+
+--seed (default: 67) int
 * train & valid set을 나눌 떄 사용되는 seed
 
 ### 3. Training
@@ -31,20 +33,24 @@
   # e.g.
   # python main.py --data_dir ../dataset --save_dir ../results --history_length 10 --policy_type transformer
 ```
- --data_dir (default: "./dataset")
+--data_dir (default: "./dataset")
 * signal_data 디렉토리가 위치해있는 상위 dataset 디렉토리
- --save_dir (default: "./results")
+
+--save_dir (default: "./results")
 * training 결과들이 저장될 디렉토리
- --history_length (default: 30)
+
+--history_length (default: 30)
 * 각 subject의 time step의 길이에 관여하는 요소
- --policy_type (default: "transformer")
+
+--policy_type (default: "transformer")
 * Policy Model들 ('lstm', 'mog', 'transformer')
+
 ### 4. Pretrained-Model Load
 ```bash
   python model_load.py --model_direc [MODEL DIREC]
 ```
 
- --data_dir (required)
+--data_dir (required)
 * model 정보가 위치해있는 디렉토리
 
 ## Pretrained Results Link
