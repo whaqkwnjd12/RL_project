@@ -98,14 +98,18 @@
 * history_length: state에 포함할 과거 window 길이 (예: 10)
 
 State 구조
+
 ![State Formula](./asset/states.png)
+
 * T = history_length + 1 (예: 11 timestep)
 * F = feature 개수 (ART_SBP, ART_MBP, HR, SPO2, PPF20_RATE, RFTN20_RATE, PPF20_VOL, RFTN20_VOL)
 
 ## 2-3. action
 Action
 과거 history_length window의 약물 RATE 값들에 대해 linear regression slope(기울기)를 계산하여 action으로 사용.
+
 ![Action Formula](./asset/action.png)
+
 action은 “최근 일정 구간 동안 약물 투여율이 증가 경향인지 / 감소 경향인지”를 나타냄.
 
 ## 2-4. reward
