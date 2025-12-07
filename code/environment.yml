@@ -3,14 +3,12 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10.19=h981015d_0
+  - python=3.10.19
   - pip:
       - matplotlib==3.10.7
       - numpy==2.2.6
       - pandas==2.3.3
       - scikit-learn==1.7.2
       - scipy==1.15.3
-      - torch==2.9.1+cu128
-      - torchvision==0.24.1+cu128
       - tqdm==4.67.1
       - vitaldb==1.5.8
