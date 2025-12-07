@@ -1,0 +1,27 @@
+
+
+
+ART = 'SNUADC/ART'
+ART_SBP = 'Solar8000/ART_SBP'
+ART_MBP = 'Solar8000/ART_MBP'
+HR = 'Solar8000/HR'
+SPO2 ='Solar8000/PLETH_SPO2'
+PPF20_VOL = 'Orchestra/PPF20_VOL'
+PPF20_RATE = 'Orchestra/PPF20_RATE'
+RFTN20_VOL = 'Orchestra/RFTN20_VOL'
+RFTN20_RATE = 'Orchestra/RFTN20_RATE'
+
+VITAL_COLS = [
+    ART_SBP,
+    ART_MBP,
+    HR,
+    SPO2
+]
+
+MEDICATION_COLS = [
+    PPF20_VOL,
+    PPF20_RATE,
+    RFTN20_VOL,
+    RFTN20_RATE,
+
+]
