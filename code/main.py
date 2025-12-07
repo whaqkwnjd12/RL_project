@@ -28,7 +28,7 @@ def get_params():
     parser.add_argument(
         "--save_dir",
         type=str,
-        help="Path to your signal_data directory",
+        help="Path to your save directory",
         default='./results'
     )
     parser.add_argument(
